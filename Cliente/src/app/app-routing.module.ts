@@ -48,7 +48,7 @@ const routes: Routes = [
       },
       {
         path: 'saldo-inventario',
-        canActivate: [AuthGuard] ,
+        //canActivate: [AuthGuard] ,
         component:SaldoInventarioComponent
       },
       {
