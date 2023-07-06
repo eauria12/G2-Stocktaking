@@ -31,7 +31,6 @@ const routes: Routes = [
     children: [
       {
         path: 'dashboard',
-        canActivate: [AuthGuard] ,
         loadChildren: () =>
           import('./pages/pages.module').then((m) => m.PagesModule),
       },
@@ -49,7 +48,7 @@ const routes: Routes = [
       },
       {
         path: 'saldo-inventario',
-        canActivate: [AuthGuard] ,
+       // canActivate: [AuthGuard] ,
         component:SaldoInventarioComponent
       },
       {
